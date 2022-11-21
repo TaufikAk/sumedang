@@ -6,7 +6,7 @@ function Header() {
     <div id='main'>
         <Navbar/>
         <div className='name'>
-            <h1><span>Launch Your App</span> With Confidence And Creativity</h1>
+            <h1><span>Scoffee</span> Aplikasi Learning Coffee Pilihan</h1>
             <p className='details'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, perferendis laborum voluptates rem
              quisquam minima .</p>
              <a href='#' className='cv-btn'>Download</a>
