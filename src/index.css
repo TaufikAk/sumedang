@@ -25,7 +25,7 @@ input{
   border: none;
 }
 .logo img{
-  width: 90px;
+  width: 70px;
 }
 #main{
 
@@ -38,19 +38,19 @@ input{
 }
 nav{
 display: flex;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: center;
 position: fixed;
 left: 0;
-top: 0;
+top: 15px;
 width:100%;
 z-index: 1;
   background-color: transparent;
-  transition: 0.6s ease-in-out;
+  transition: .6s ease-in;
 }
 nav.active{
 box-shadow: 5px 10px 30px rgba(0, 247, 255, 0.157);
-background-color: #ffffff;
+background-color: #362204;
 }
 nav ul{
 display: flex;

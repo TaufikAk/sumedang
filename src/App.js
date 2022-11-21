@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "./Components/Header";
-import Feature from "./Components/Feature";
-import About from "./Components/About";
-import Presentation from "./Components/Presentation";
+import Header from "./Components/Homepage/Header";
+import Feature from "./Components/Homepage/Feature";
+import About from "./Components/Homepage/About";
+import Presentation from "./Components/Homepage/Presentation";
 import aboutimage from './images/about.png';
 import aboutimage1 from './images/download.png';
-import Contact from "./Components/Contact";
+import Contact from "./Components/Homepage/Contact";
 
 function App() {
   return (
