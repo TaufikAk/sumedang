@@ -3,19 +3,23 @@ import Header from "./Components/Homepage/Header";
 import Feature from "./Components/Homepage/Feature";
 import About from "./Components/Homepage/About";
 import Presentation from "./Components/Homepage/Presentation";
-import aboutimage from './images/about.png';
-import aboutimage1 from './images/download.png';
+// import aboutimage from './images/about.png';
+// import aboutimage1 from './images/download.png';
 import Contact from "./Components/Homepage/Contact";
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import Navbar from "./Components/Navbar/Navbar";
+import Event from "./Components/Pages/Event";
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Feature/>
-      <About image={aboutimage} title='Lengkap Dengan Fitur Forum Pecinta Kopi' button='Get The App' />
-      <Presentation/>
-      <About image={aboutimage1} title='Download Sekarang dan Dapatkan Semuanya' button='Download' />
-      <Contact/>
+      <BrowserRouter>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Header/>}/>
+          <Route path="/event" element={<Event/>}/>
+    </Routes>
+  </BrowserRouter>
     </div>
   );
 }

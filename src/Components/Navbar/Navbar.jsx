@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/logoscoffee.png';
 
 function Navbar() {
@@ -17,19 +18,19 @@ function Navbar() {
 
   return (
     <nav className={nav ? 'nav active' : 'nav'}>
-        <a href='#' className='logo'>
+        <Link to={'/'} className='logo'>
             <img src={logo}/>
-        </a>
+        </Link>
         <input type="checkbox" className='menu-btn' id='menu-btn' />
-        <label className='menu-icon' for='menu-btn'>
+        <label className='menu-icon' htmlFor='menu-btn'>
             <span className='nav-icon'></span>
         </label>
         <ul className='menu'>
-            <li><a href='#' className='active'>Home</a></li>
-            <li><a href='#'>Coffee</a></li>
-            <li><a href='#'>Edukasi</a></li>
-            <li><a href='#'>Event</a></li>
-            <li><a href='#'>Download</a></li>
+            <li><Link to={'/'} >Home</Link></li>
+            <li><Link to={'/'}>Coffee</Link></li>
+            <li><Link to={'/'}>Edukasi</Link></li>
+            <li><Link to={'/event'}>Event</Link></li>
+            <li><Link to={'/'}>Download</Link></li>
         </ul>
     </nav>
   )
