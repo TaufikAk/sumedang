@@ -29,7 +29,7 @@ function Edukasi() {
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
+                                    <h5 className="card-title">Roasting Kopi</h5>
                                     <hr />
                                     <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
@@ -48,7 +48,7 @@ function Edukasi() {
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
+                                    <h5 className="card-title">Barista</h5>
                                     <hr />
                                     <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                     <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
