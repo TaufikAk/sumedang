@@ -12,9 +12,9 @@ function App() {
     <div className="App">
       <Header/>
       <Feature/>
-      <About image={aboutimage} title='Comes With All You Need For Daily Life' button='Get The App' />
+      <About image={aboutimage} title='Lengkap Dengan Fitur Forum Pecinta Kopi' button='Get The App' />
       <Presentation/>
-      <About image={aboutimage1} title='Download and Get The App Now' button='Download' />
+      <About image={aboutimage1} title='Download Sekarang dan Dapatkan Semuanya' button='Download' />
       <Contact/>
     </div>
   );

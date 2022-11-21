@@ -1,16 +1,16 @@
 import React from 'react';
 import FeatureBox from './FeatureBox';
-import featureimage from '../../images/feature_1.png';
-import featureimage1 from '../../images/feature_2.png';
-import featureimage2 from '../../images/feature_3.png';
+import Coffeebean from '../../images/coffeebeans.png';
+import Edukasii from '../../images/edukasii.jpg';
+import Eventi from '../../images/eventi.png';
 
 function Feature() {
   return (
     <div id='features'>
         <div className='a-container'>
-          <FeatureBox image={featureimage} title='Development Course' />
-          <FeatureBox image={featureimage1} title='Money Saving Service' />
-          <FeatureBox image={featureimage2} title='Usability Interface' />
+          <FeatureBox image={Coffeebean} title='Coffee' />
+          <FeatureBox image={Edukasii} title='Edukasi' />
+          <FeatureBox image={Eventi} title='Events' />
         </div>
     </div>
   )
