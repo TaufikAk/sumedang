@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Contact() {
   return (
@@ -6,7 +7,7 @@ function Contact() {
         <h3>Send Me Mail</h3>
         <div className='contact-input'>
             <input type="email" placeholder='example@gmail.com' />
-            <a href='#'>Contact</a>
+            <Link to={''}>Contact</Link>
         </div>
     </div>
   )
