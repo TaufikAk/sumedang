@@ -412,6 +412,15 @@ border-radius: 20px;
 .contact-input a:hover{
   background-color:#0099ff;
 }
+
+.bg-event {
+  background-image: url(images/bgevents.jpg);
+    /* height: 100vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media(max-width:1190px){
 #main{
   background-size: 1150px !important;

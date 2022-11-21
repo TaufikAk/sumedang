@@ -1,6 +1,7 @@
+import Bg from "../../images/bgevents.jpg"
 import axios from "axios"
 import { useEffect, useState } from "react"
-import Navbar from "../Navbar/Navbar"
+import CardEvent from "./Card/CardEvent"
 
 
 const Event = () =>{
@@ -19,6 +20,7 @@ const Event = () =>{
         })
         .then(function(response) {
             console.log(response)
+            addLoadPost(response.data.data.data)
         })
         .catch(function(error) {
             console.log(error)
@@ -27,12 +29,21 @@ const Event = () =>{
 
     useEffect(() => {
         getPost();
+        console.log(loadPost);
     })
 
     return(
-        <>
-
-        </>
+        <div className="bg-event">
+            <h1> Event </h1>
+            <div className="row m-5 gap-3 d-flex justify-content-evenly">
+                {
+                    loadPost.map(isiPost => {
+                        return <CardEvent key={isiPost.id} id={isiPost.id} title={isiPost.title} date={isiPost.date} author={isiPost.author}
+                        body={isiPost.body} image={isiPost.image} />
+                    })
+                }
+            </div>
+        </div>
     )
 }
 
