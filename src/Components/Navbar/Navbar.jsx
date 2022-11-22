@@ -14,6 +14,13 @@ function Navbar() {
         }
     }
 
+    // const NavStyles = ({ isActive }) => {
+    //     return {
+    //         color: isActive ? '#FFFFFF' : '#BF8E2C',
+    //         backgroundColor: isActive ? '#BF8E2C' : '#FFFFFF'
+    //     }
+    // }
+
     window.addEventListener('scroll', changeBackground);
 
   return (
@@ -26,11 +33,11 @@ function Navbar() {
             <span className='nav-icon'></span>
         </label>
         <ul className='menu'>
-            <li><Link to={'/'} >Home</Link></li>
-            <li><Link to={'/'}>Coffee</Link></li>
-            <li><Link to={'/'}>Edukasi</Link></li>
-            <li><Link to={'/event'}>Event</Link></li>
-            <li><Link to={'/'}>Download</Link></li>
+            <li><Link to={'/'}  className="nav-link active">Home</Link></li>
+            <li><Link to={'/'} className="nav-link">Coffee</Link></li>
+            <li><Link to={'/'} className="nav-link">Edukasi</Link></li>
+            <li><Link to={'/event'} className="nav-link">Event</Link></li>
+            <li><Link to={'/'} className="nav-link">Download</Link></li>
         </ul>
     </nav>
   )
