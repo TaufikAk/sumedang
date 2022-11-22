@@ -17,7 +17,7 @@ function Edukasi() {
                                 </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
-                                        <h5 className="card-title">Artikel Pertanina</h5>
+                                        <h5 className="card-title">Artikel Pertanina tes</h5>
                                         <hr />
                                         <p className="card-text">Sumbar:"https://peluangusaha.kontan.co.id/news/petani-kopi-butuh-edukasi-untuk-menjaga-konsistensi-kualitas-biji-kopi"</p>
                                         <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
