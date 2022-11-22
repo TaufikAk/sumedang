@@ -50,7 +50,7 @@ z-index: 1;
 }
 nav.active{
 box-shadow: 5px 10px 30px rgba(237, 151, 40, 0.336);
-background-color: transparent;
+background-color: rgba(255, 255, 255, 0.5);
 }
 nav ul{
 display: flex;
@@ -79,7 +79,7 @@ color:#000000;
 nav ul li a:hover{
 background-color: #BF8E2C;
   color:#ffffff;
-box-shadow: 5px 10px 30px rgb(237, 151, 40, 0.336);
+box-shadow: 5px 10px 30px rgb(237, 151, 40, 0.5);
 transition: all ease 0.2s;
 }
 nav .menu-btn,

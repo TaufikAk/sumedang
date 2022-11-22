@@ -56,7 +56,7 @@ function Coffee() {
                         </div>
                     </div>
                     <div className="col-3">
-                        <img src={about} alt="" style={{ width: "50px", height: "50px" }} />
+                        <img src={about} alt="" style={{ width: "0px", height: "0px" }} />
                     </div>
                 </div>
             </div>

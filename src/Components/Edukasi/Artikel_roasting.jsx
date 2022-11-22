@@ -1,7 +1,7 @@
 function Artikel_roasting() {
     return (
-        <>
-                        <h1>Edukasi bagi Pemula Peminum Kopi</h1>
+        <div style={{marginTop:"70px"}}>
+                        <h1 style={{marginLeft:"20%"}}>Edukasi bagi Pemula Peminum Kopi</h1>
                         <hr />
                         <img src="" alt="" />
             <div className="container">
@@ -71,7 +71,7 @@ function Artikel_roasting() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

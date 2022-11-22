@@ -1,7 +1,7 @@
 function Artikel_barista() {
     return (
-        <>
-            <h1>Pentingnya Edukasi Kopi untuk Seorang Barista</h1>
+        <div style={{marginTop:"70px"}}>
+            <h1 style={{marginLeft:"20%"}}>Pentingnya Edukasi Kopi untuk Seorang Barista</h1>
             <br />
             <img src="" alt="" />
         <div className="container">
@@ -101,7 +101,7 @@ function Artikel_barista() {
                 </div>
             </div>
         </div>
-        </>
+        </div>
     );
 }
 

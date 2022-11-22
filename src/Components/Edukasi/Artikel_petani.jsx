@@ -1,7 +1,7 @@
 function Artikel_petani() {
     return (
-        <>
-            <h3>Petani kopi butuh edukasi untuk menjaga konsistensi kualitas biji kopi</h3>
+        <div style={{marginTop:"70px"}}>
+            <h3 style={{marginLeft:"20%"}}>Petani kopi butuh edukasi untuk menjaga konsistensi kualitas biji kopi</h3>
             <hr />
             <img src="" alt="" />
             <div className="container">
@@ -49,7 +49,7 @@ function Artikel_petani() {
                 </div>
             </div>
 
-        </>
+        </div>
     );
 }
 
