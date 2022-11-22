@@ -8,7 +8,7 @@ function Edukasi() {
         <>
             <Navbar />
             <div>
-                <div className="row d-flex justify-content-center" style={{marginTop:"75px"}}>
+                <div className="row d-flex justify-content-center" style={{ marginTop: "75px" }}>
                     <div className="col-10">
                         <div className="card mb-3" style={{ maxWidth: "70rem", backgroundColor: "#E7E8E6" }}>
                             <div className="row g-0">
@@ -31,9 +31,6 @@ function Edukasi() {
 
                         <div className="card mb-3" style={{ maxWidth: "70rem", backgroundColor: "#E7E8E6" }}>
                             <div className="row g-0">
-                                <div className="col-md-4">
-                                    <img src={roasting} className="img-fluid rounded-start" alt="..." />
-                                </div>
                                 <div className="col-md-8">
                                     <div className="card-body">
                                         <h5 className="card-title">Roasting Kopi</h5>
@@ -43,6 +40,9 @@ function Edukasi() {
                                         <Link to={"/roasting"} className=" stretched-link"></Link>
                                     </div>
                                 </div>
+                                    <div className="col-md-4">
+                                        <img src={roasting} className="img-fluid rounded-start" alt="..." />
+                                    </div>
                             </div>
                         </div>
                     </div>
