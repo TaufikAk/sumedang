@@ -5,6 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap.min.js"
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 // import Coffee from './Components/Coffee/Coffee';
 

@@ -25,7 +25,14 @@ input{
   border: none;
 }
 .logo img{
+<<<<<<< HEAD
   width: 55px;
+=======
+  width: 70px;
+  margin-left: 175%;
+  background-color: #ffffff;
+  border-radius: 10px;
+>>>>>>> 403a736f8ff269619c055809add1bec8f08ceada
 }
 #main{
 
@@ -38,7 +45,7 @@ input{
 }
 nav{
 display: flex;
-justify-content: space-evenly;
+justify-content: space-between;
 align-items: center;
 position: fixed;
 left: 0;
@@ -54,6 +61,7 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 nav ul{
 display: flex;
+margin-right: 10%;
 }
 .active{
   background-color: #BF8E2C;
@@ -412,6 +420,15 @@ border-radius: 20px;
 .contact-input a:hover{
   background-color:#0099ff;
 }
+
+.bg-event {
+  background-image: url(images/bgevent.jpg);
+    /* height: 100vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media(max-width:1190px){
 #main{
   background-size: 1150px !important;
