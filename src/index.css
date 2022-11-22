@@ -25,14 +25,9 @@ input{
   border: none;
 }
 .logo img{
-<<<<<<< HEAD
-  width: 55px;
-=======
-  width: 70px;
+  height: 50px;
+  width: auto;
   margin-left: 175%;
-  background-color: #ffffff;
-  border-radius: 10px;
->>>>>>> 403a736f8ff269619c055809add1bec8f08ceada
 }
 #main{
 
@@ -79,7 +74,7 @@ display: flex;
 font-size: 0.9rem;
 text-transform: uppercase;
 font-weight: bold;
-color:#000000;
+color:#BF8E2C;
   letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.2s ease-in-out;
@@ -427,6 +422,10 @@ border-radius: 20px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.bg-event .m-5{
+  padding-top: 50px;
 }
 
 @media(max-width:1190px){

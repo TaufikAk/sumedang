@@ -2,9 +2,12 @@ import { useEffect } from "react";
 
 
 const CardEvent = (props) =>{
-    useEffect(()=>{
-        console.log(props.index)
-    })
+    const changeCard = () =>{
+        
+    }
+    // useEffect(()=>{
+    //     console.log(props.index)
+    // })
     return(
         <>
             <div className="card col-lg-5 col-md-10 bg-dark text-white m-2 p-0 rounded rounded-5">
