@@ -24,6 +24,25 @@ input{
   outline: none;
   border: none;
 }
+
+footer{
+  background-color: #BF8E2C;
+  color: #FFFFFF;
+
+}
+
+footer .row{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+footer .row .col-5 img{
+  width: 150px;
+}
+
 .logo img{
   height: 50px;
   width: auto;
@@ -185,7 +204,7 @@ padding: 0px;
   width: 80%;
 font-size: 1.2rem;
 color:#272727;
-
+text-align: justify;
 }
 .about-text button{
   margin-top: 20px;
@@ -231,14 +250,15 @@ width: 600px;
 }
 .a-box{
   background-color: #ffffff;
-  width:300px;
-  height: 450px;
+  width:320px;
+  height: 470px;
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 10px 12px rgba(0,0,0,0.1);
   transition: 0.3s ease-in-out;
   position: relative;
+  padding: 20px;
 }
 .a-b-img{
   width: 100%;
@@ -252,7 +272,7 @@ width: 600px;
 
 }
 .a-box:hover{
-  box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
 }
 #presentation{
   padding-top: 30px;
@@ -367,9 +387,8 @@ font-size: 2rem;
   box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
 
-
 #contact{
-  background-color: #00b7ff;
+  background-color: #BF8E2C;
 display:flex;
 flex-direction: column;
 justify-content: center;
@@ -401,7 +420,7 @@ color:#242425;
 .contact-input a{
 width:200px;
 height:35px;
-background-color:#00b7ff;
+background-color:#BF8E2C;
 color:#FFFFFF;
 display: flex;
 font-size: 0.9rem;
@@ -413,7 +432,7 @@ border-radius: 20px;
   transition: 0.4s ease-out;
 }
 .contact-input a:hover{
-  background-color:#0099ff;
+  background-color:#af8329;
 }
 
 .bg-event {
@@ -426,6 +445,27 @@ border-radius: 20px;
 
 .bg-event .m-5{
   padding-top: 50px;
+}
+
+.bg-event-loading{
+  background-color: rgb(250, 244, 148, 0.5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#download-page{
+  background-color: #FAF494;
+  height: 100vh;
+  background-size: cover;
+}
+
+.page{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 0;
 }
 
 @media(max-width:1190px){
