@@ -41,8 +41,8 @@ function Navbar() {
             <li><Link to={'/'}>Download</Link></li>
 =======
             <li><Link to={'/'}  className="nav-link active">Home</Link></li>
-            <li><Link to={'/'} className="nav-link">Coffee</Link></li>
-            <li><Link to={'/'} className="nav-link">Edukasi</Link></li>
+            <li><Link to={'/coffee'} className="nav-link">Coffee</Link></li>
+            <li><Link to={'/edukasi'} className="nav-link">Edukasi</Link></li>
             <li><Link to={'/event'} className="nav-link">Event</Link></li>
             <li><Link to={'/'} className="nav-link">Download</Link></li>
 >>>>>>> 403a736f8ff269619c055809add1bec8f08ceada
