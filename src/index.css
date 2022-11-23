@@ -51,7 +51,7 @@ footer .d-flex img{
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('./images/bgcoffee.jpg');
+  background-image: url('./images/bgcoffee.png');
 }
 nav{
 display: flex;
@@ -463,6 +463,11 @@ border-radius: 20px;
   justify-content: center;
   margin: 20px;
   margin-bottom: 0;
+}
+
+#main .name a:hover{
+  color: #BF8E2C;
+  background-color:#ffffff;
 }
 
 @media(max-width:1190px){
