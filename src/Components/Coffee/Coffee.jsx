@@ -3,6 +3,7 @@ import about from "../../images/about.png"
 import Navbar from "../Navbar/Navbar";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 function Coffee() {
     const BASE_URL = 'https://scoffe.masuk.web.id/api/'
     const [loadPost, setLoadPost] = useState([]);
@@ -49,6 +50,8 @@ function Coffee() {
                                                 <hr />
                                                 <p className="card-text">{isipost.origin}</p>
                                                 <p className="card-text"><small className="text-muted">{isipost.created_at}</small></p>
+                                                <Link to={`/detailcoffee/${isipost.id}`} className=" stretched-link"></Link>
+
 
                                             </div>
                                         </div>

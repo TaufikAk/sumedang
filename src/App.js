@@ -8,6 +8,7 @@ import Edukasi from "./Components/Edukasi/Edukasi";
 import Artikel_petani from "./Components/Edukasi/Artikel_petani";
 import Download from "./Components/Pages/Download";
 import Footer from "./Components/Navbar/Footer";
+import Detailcoffee from "./Components/Coffee/Detailcoffee";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/home" element={<Header />} />
             <Route path="/event" element={<Event />} />
             <Route path="/coffee" element={<Coffee />} />
+            <Route path="/detailcoffee/:id" element={<Detailcoffee />} />
             <Route path="/edukasi" element={<Edukasi />} />
             <Route path="/petani/:id" element={<Artikel_petani />} />
             <Route path="/download" element={<Download />} />
