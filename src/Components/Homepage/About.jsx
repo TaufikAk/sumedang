@@ -1,6 +1,8 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 function About(props) {
+  const navigate = useNavigate();
   return (
     <div id='about'>
         <div className='about-image'>
@@ -9,7 +11,7 @@ function About(props) {
         <div className='about-text'>
             <h2>{props.title}</h2>
                 <p>{props.content}</p>
-                    <button> {props.button} </button>
+                    <button onClick={()=>navigate("/download")}> {props.button} </button>
         </div>
     </div>
   )

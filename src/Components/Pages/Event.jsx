@@ -114,9 +114,9 @@ const Event = () => {
                                     if (index !== 0) {
                                         if (index !== pages.length - 1) {
                                             if (!isi.active) {
-                                                return <Pagination.Item onClick={() => getPoste(isi.url)}>{isi.label}</Pagination.Item>
+                                                return <Pagination.Item key={isi.id} onClick={() => getPoste(isi.url)}>{isi.label}</Pagination.Item>
                                             } else {
-                                                return <Pagination.Item active>{isi.label}</Pagination.Item>
+                                                return <Pagination.Item key={isi.id} active>{isi.label}</Pagination.Item>
                                             }
                                         }
 

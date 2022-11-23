@@ -1,9 +1,7 @@
 import aboutimage from '../../images/about.png';
 import aboutimage1 from '../../images/download.png';
 import React from 'react';
-import Navbar from '../Navbar/Navbar';
 import About from './About';
-import Contact from './Contact';
 import Feature from './Feature';
 import Presentation from './Presentation';
 import { Link } from 'react-router-dom';
@@ -16,7 +14,7 @@ function Header() {
         <div className='name'>
             <h1><span>Scoffee</span> - Sumedang Coffee</h1>
             <p className='details'>"Membumikan kopi dengan Scoffee - Aplikasi edukasi karya anak negeri"</p>
-             <Link to={''} className='cv-btn'>Download</Link>
+             <Link to={'/download'} className='cv-btn'>Download</Link>
         </div>
 
     </div>
