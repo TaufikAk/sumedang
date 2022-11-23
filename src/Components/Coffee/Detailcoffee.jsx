@@ -9,6 +9,7 @@ function Detailcoffee() {
         axios.get(`https://scoffe.masuk.web.id/api/coffee/${id}`)
         .then(function (response) {
             // console.log(response);
+            console.log(id)
             setLoadPost(response.data.data)
         })
         .catch(function (error) {

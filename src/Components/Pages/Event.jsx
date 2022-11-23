@@ -86,12 +86,12 @@ const Event = () => {
     return (
         <>
             {loading ? <div className="bg-event-loading">
-                <p><Spinner animation="border" size="lg" /></p>
-                <p>Loading
+                <div><Spinner animation="border" size="lg" /></div>
+                <div>Loading
                     <Spinner animation="grow" size="sm" />
                     <Spinner animation="grow" size="sm" />
                     <Spinner animation="grow" size="sm" />
-                </p>
+                </div>
             </div> :
                 <div className="bg-event">
                     <h1 className="m-5 text-white"> Event </h1>
