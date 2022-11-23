@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import logo from '../../images/logoscoffee.png';
 
 function Navbar() {
@@ -14,18 +14,18 @@ function Navbar() {
         }
     }
 
-    // const NavStyles = ({ isActive }) => {
-    //     return {
-    //         color: isActive ? '#FFFFFF' : '#BF8E2C',
-    //         backgroundColor: isActive ? '#BF8E2C' : '#FFFFFF'
-    //     }
-    // }
+    const NavStyles = ({ isActive }) => {
+        return {
+            color: isActive ? '#FFFFFF' : '#BF8E2C',
+            backgroundColor: isActive ? '#BF8E2C' : 'transparent'
+        }
+    }
 
     window.addEventListener('scroll', changeBackground);
 
   return (
     <nav className={nav ? 'nav active' : 'nav'}>
-        <Link to={'/'} className='logo'>
+        <Link to={'/home'} className='logo'>
             <img src={logo}/>
         </Link>
         <input type="checkbox" className='menu-btn' id='menu-btn' />
@@ -33,19 +33,11 @@ function Navbar() {
             <span className='nav-icon'></span>
         </label>
         <ul className='menu'>
-<<<<<<< HEAD
             <li><Link to={'/'} >Home</Link></li>
             <li><Link to={'/coffee'}>Coffee</Link></li>
             <li><Link to={'/edukasi'}>Edukasi</Link></li>
             <li><Link to={'/event'}>Event</Link></li>
             <li><Link to={'/'}>Download</Link></li>
-=======
-            <li><Link to={'/'}  className="nav-link active">Home</Link></li>
-            <li><Link to={'/coffee'} className="nav-link">Coffee</Link></li>
-            <li><Link to={'/edukasi'} className="nav-link">Edukasi</Link></li>
-            <li><Link to={'/event'} className="nav-link">Event</Link></li>
-            <li><Link to={'/'} className="nav-link">Download</Link></li>
->>>>>>> 403a736f8ff269619c055809add1bec8f08ceada
         </ul>
     </nav>
   )
