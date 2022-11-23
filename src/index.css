@@ -451,10 +451,11 @@ border-radius: 20px;
   align-items: center;
 }
 
-#download-page{
+.download-page{
   background-color: #FAF494;
   height: 100vh;
   background-size: cover;
+  padding-top: 10%;
 }
 
 .page{
