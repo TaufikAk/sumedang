@@ -8,7 +8,7 @@ const Footer = () =>{
             height: "100px",
             marginTop: "0px"
             }}>
-        <div className="d-flex flex-row justify-content-around align-items-center p-3" >
+        <div className="d-flex flex-row justify-content-around align-items-center pt-4" >
             <span>&copy; Scoffee 2022</span>
             <img src={Storei}></img>
         </div>

@@ -17,7 +17,7 @@ const DetailEvent = (props) =>{
       <Col xs={7}>
         <div className="h4 mb-3">{props.title}</div>
         {/* <div>{content}</div> */}
-        <div dangerouslySetInnerHTML={{__html: props.body}}></div>
+        <div dangerouslySetInnerHTML={{__html: props.body}}  style={{textAlign:"justify"}}></div>
       </Col>
       <Col xs={5}>
         <div><p>Tanggal Event: {props.date}</p></div>
