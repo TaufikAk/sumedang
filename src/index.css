@@ -32,7 +32,7 @@ footer{
 }
 
 footer .row{
-  padding: 15px 0px;
+  padding-top: 15px;
 }
 
 footer .d-flex img{
@@ -146,9 +146,9 @@ justify-content: center;
 color:#ffffff;
 }
 .cv-btn:hover{
-background-color: #0099ff;
+background-color: #ffffff;
   transition: all ease 0.5s;
-  color: #ffffff;
+  color: #BF8E2C;
 }
 
 .f-heading h1{
@@ -453,9 +453,19 @@ border-radius: 20px;
 
 .download-page{
   background-color: #FAF494;
+  width: 100%;
   height: 100vh;
   background-size: cover;
-  padding-top: 10%;
+  padding-top: 6%;
+}
+
+.download-page .col-lg-6 img{
+  width: 100%;
+  height: auto;
+}
+
+.download-page .col-lg-6 h2{
+  color: #BF8E2C;
 }
 
 .page{
@@ -553,6 +563,14 @@ border-radius: 20px;
       display: none;
   }
 }
+
+
+@media(max-width:765px){
+  .download-page .col-lg-6 img{
+    display: none;
+  }
+}
+
 @media(max-width:600px){
 .name{
   width:60%;
@@ -560,6 +578,7 @@ border-radius: 20px;
   .scroll{
       left: 42.5%;
   }
+
 @media(max-width:1100px){.menu-icon{
   display:block;}
       nav{
@@ -568,8 +587,13 @@ border-radius: 20px;
           padding: 0px 30px;
       }
       .logo img{
+<<<<<<< HEAD
           width:50px;
           height: 50px;
+=======
+        height: 50px;
+          width:auto;
+>>>>>>> 7a2040892da6d39971e44a55e9d00fcf43e1d2a3
       }
       .header-btns{
           margin: 0;

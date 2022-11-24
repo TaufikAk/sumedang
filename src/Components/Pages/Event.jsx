@@ -57,23 +57,26 @@ const Event = () => {
 
     }
 
-    const getPoste = (url) => {
-        axios.defaults.withCredentials = true
-        axios.get(`${url}`, {
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json'
+    const getPoste = async (url) => {
+        isLoading(true)
+        try{
+
+            // axios.defaults.withCredentials = true
+            const response = await axios.get(`${url}`, {
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                }
+            });
+                    console.log(response)
+                    addPage(response.data.data)
+                    addLoadPost(response.data.data.data)
+                    addPages(response.data.data.links)
+                    isLoading(false)
+        }
+            catch(err) {
+                console.log(err)
             }
-        })
-            .then(function (response) {
-                console.log(response)
-                addPage(response.data.data)
-                addLoadPost(response.data.data.data)
-                addPages(response.data.data.links)
-            })
-            .catch(function (error) {
-                console.log(error)
-            })
     }
 
     useEffect(() => {
@@ -87,12 +90,12 @@ const Event = () => {
     return (
         <>
             {loading ? <div className="bg-event-loading">
-                <p><Spinner animation="border" size="lg" /></p>
-                <p>Loading
+                <div><Spinner animation="border" size="lg" /></div>
+                <div>Loading
                     <Spinner animation="grow" size="sm" />
                     <Spinner animation="grow" size="sm" />
                     <Spinner animation="grow" size="sm" />
-                </p>
+                </div>
             </div> :
                 <div className="bg-event">
                     <h1 className="m-5 text-white"> Event </h1>
