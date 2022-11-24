@@ -21,7 +21,7 @@ function App() {
           <Navbar />
           <Routes>
             {/* <Route path="/" element={<Header/>}/> */}
-            <Route path="/home" element={<Header />} />
+            <Route path="/" element={<Header />} />
             <Route path="/event" element={<Event />} />
             <Route path="/coffee" element={<Coffee />} />
             <Route path="/detailcoffee/:id" element={<Detailcoffee />} />
