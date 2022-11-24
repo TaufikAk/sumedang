@@ -2,6 +2,7 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { Pagination, Spinner } from "react-bootstrap"
 import { useSearchParams } from "react-router-dom"
+// import Footer from "../Navbar/Footer"
 import CardEvent from "./Card/CardEvent"
 
 
