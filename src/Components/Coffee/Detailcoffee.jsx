@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-// import Footer from "../Navbar/Footer";
 
 function Detailcoffee() {
     const { slug } = useParams()
@@ -10,7 +9,7 @@ function Detailcoffee() {
         axios.get(`https://scoffe.masuk.web.id/api/coffee/${slug}`)
         .then(function (response) {
             // console.log(response);
-            console.log(id)
+            // console.log(id)
             setLoadPost(response.data.data)
         })
         .catch(function (error) {

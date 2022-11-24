@@ -29,7 +29,7 @@ function Edukasi() {
     //5
     useEffect(() => {
         getPost();
-        console.log(loadPost)
+        // console.log(loadPost)
     }, [])
     return (
         <>

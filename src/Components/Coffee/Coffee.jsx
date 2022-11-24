@@ -30,7 +30,7 @@ function Coffee() {
     //5
     useEffect(() => {
         getPost();
-        console.log(loadPost)
+        // console.log(loadPost)
     }, [])
     return (
         <div id="bg1">
