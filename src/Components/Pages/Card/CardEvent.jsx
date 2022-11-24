@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import Footer from "../../Navbar/Footer";
 
 
 const CardEvent = (props) =>{
@@ -16,6 +17,7 @@ const CardEvent = (props) =>{
                     <h5 className="card-title bg-dark">{props.title}</h5>
                 </div>
             </div>
+        
         </>
     )
 }

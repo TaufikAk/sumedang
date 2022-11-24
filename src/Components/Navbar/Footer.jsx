@@ -5,8 +5,8 @@ const Footer = () =>{
         <footer style={{
             // clear: "both",
             position: "relative",
-            height: "100px",
-            marginTop: "0px"
+            height: "80px",
+            
             }}>
         <div className="d-flex flex-row justify-content-around align-items-center p-3" >
             <span>&copy; Scoffee 2022</span>

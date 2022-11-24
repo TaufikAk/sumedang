@@ -5,6 +5,7 @@ import About from './About';
 import Feature from './Feature';
 import Presentation from './Presentation';
 import { Link } from 'react-router-dom';
+import Footer from '../Navbar/Footer';
 
 function Header() {
   return (
@@ -27,7 +28,7 @@ function Header() {
       <About image={aboutimage1} title='Download Sekarang dan Dapatkan Semuanya' button='Download' content='Informasi lengkap mengenai kopi, 
       edukasi dari para ekspertise di bidang kopi, dan informasi kegiatan bertemakan kopi. Semuanya dapat Anda dapatkan dan akses secara 
       mudah melalui Scoffee. Aplikasi edukasi karya anak negeri!' />
-      {/* <Contact/> */}
+      
     </>
   )
 }

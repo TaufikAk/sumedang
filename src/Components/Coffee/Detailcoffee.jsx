@@ -1,12 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+// import Footer from "../Navbar/Footer";
 
 function Detailcoffee() {
-    const { id } = useParams()
+    const { slug } = useParams()
     const [loadPost, setLoadPost] = useState([]);
     useEffect(() => {
-        axios.get(`https://scoffe.masuk.web.id/api/coffee/${id}`)
+        axios.get(`https://scoffe.masuk.web.id/api/coffee/${slug}`)
         .then(function (response) {
             // console.log(response);
             setLoadPost(response.data.data)
@@ -18,18 +19,19 @@ function Detailcoffee() {
 
     return ( 
         <>
-                <div style={{ marginTop: "70px" }} id="bg4" >
+                <div style={{ marginTop: "70px" }} >
             {
                 loadPost ? (
-                    <div key={id} >
+                    <div key={slug} >
                         <h3 style={{ marginLeft: "30%" }}><b>{loadPost.name}</b></h3>
                         <hr />
-                        <img src={`https://scoffe.masuk.web.id/images/coffee/${loadPost.image}`} width="auto" height="400px" alt="" style={{marginLeft:"25%"}}/>
+                        <img src={`https://scoffe.masuk.web.id/images/coffee/${loadPost.image}`} width="auto" height="400px" alt="" style={{marginLeft:"10%",marginRight:"10%",borderRadius:"20px"}}/>
                         <div className="container">
                             <div className="row">
                                 <div className="col-8">
                                     <h5><b>{loadPost.origin}</b></h5>
-                                    <p>{loadPost.description}</p>
+                                    <div dangerouslySetInnerHTML={{__html: loadPost.description}}></div>
+                                    {/* <p>{loadPost.description}</p> */}
 
                                 </div>
                                 <div className="col-4   ">
@@ -37,6 +39,7 @@ function Detailcoffee() {
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                 )
                     : 'masuk'
