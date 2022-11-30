@@ -2,13 +2,12 @@ import axios from "axios"
 import { useEffect, useState } from "react"
 import { Pagination, Spinner } from "react-bootstrap"
 import { useSearchParams } from "react-router-dom"
-// import Footer from "../Navbar/Footer"
 import CardEvent from "./Card/CardEvent"
 
 
 const Event = () => {
 
-    const BASE_URL = 'https://scoffe.masuk.web.id/api/'
+    const BASE_URL = 'https://be.scoffee.my.id/api/'
 
     const [loadPost, addLoadPost] = useState([]);
     const [page, addPage] = useState([]);
@@ -25,7 +24,6 @@ const Event = () => {
     //         }
     //     })
     //         .then(function (response) {
-    //             console.log(response)
     //             addPage(response.data.data)
     //             addLoadPost(response.data.data.data)
     //             addPages(response.data.data.links)
@@ -45,7 +43,6 @@ const Event = () => {
                     'Content-Type': 'application/json'
                 }
             });
-            console.log(response);
             addPage(response.data.data)
             addLoadPost(response.data.data.data)
             addPages(response.data.data.links)
@@ -59,7 +56,7 @@ const Event = () => {
 
     const getPoste = async (url) => {
         isLoading(true)
-        try{
+        try {
 
             // axios.defaults.withCredentials = true
             const response = await axios.get(`${url}`, {
@@ -68,23 +65,18 @@ const Event = () => {
                     'Content-Type': 'application/json'
                 }
             });
-                    console.log(response)
-                    addPage(response.data.data)
-                    addLoadPost(response.data.data.data)
-                    addPages(response.data.data.links)
-                    isLoading(false)
+            addPage(response.data.data)
+            addLoadPost(response.data.data.data)
+            addPages(response.data.data.links)
+            isLoading(false)
         }
-            catch(err) {
-                console.log(err)
-            }
+        catch (err) {
+            console.log(err)
+        }
     }
 
     useEffect(() => {
         getPost();
-        // console.log(loadPost);
-        // console.log(page)
-        // console.log(page.label)
-        // console.log(page.active)
     }, [])
 
     return (
@@ -97,7 +89,7 @@ const Event = () => {
                     <Spinner animation="grow" size="sm" />
                 </div>
             </div> :
-                <div className="bg-event">
+                <div className="bg-event pb-3">
                     <h1 className="m-5 text-white"> Event </h1>
                     <div className="row gap-3 d-flex justify-content-evenly">
                         {
@@ -108,7 +100,7 @@ const Event = () => {
                         }
                     </div>
 
-                    <div className="page">
+                    <div className="page mt-5">
                         <Pagination>
                             <Pagination.First onClick={() => getPoste(page.first_page_url)} />
                             <Pagination.Prev onClick={() => getPoste(page.next_page_url)} />

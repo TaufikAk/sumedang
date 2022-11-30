@@ -46,12 +46,12 @@ footer .d-flex img{
 }
 #main{
 
-  width:100%;
+  width:auto;
   height:100vh;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('./images/bgcoffee.png');
+  background-image: url('./images/bgcoffee.webp');
 }
 nav{
 display: flex;
@@ -277,7 +277,7 @@ width: 600px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(images/presentation.png);
+  background-image: url(images/presentation.webp);
   text-align: center;
 }
 #presentation h1{
@@ -460,7 +460,7 @@ border-radius: 20px;
 }
 
 .download-page .col-lg-6 img{
-  width: 100%;
+  width: 80%;
   height: auto;
 }
 
@@ -478,6 +478,10 @@ border-radius: 20px;
 #main .name a:hover{
   color: #BF8E2C;
   background-color:#ffffff;
+}
+
+.card .card-img-overlay .card-title{
+  text-shadow: #242425 1px 1px;
 }
 
 @media(max-width:1190px){

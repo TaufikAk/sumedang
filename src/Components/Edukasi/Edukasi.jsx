@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import { useEffect, useState } from "react";
 import axios from "axios";
-// import Footer from "../Navbar/Footer";
 function Edukasi() {
-    const BASE_URL = 'https://scoffe.masuk.web.id/api/'
+    const BASE_URL = 'https://be.scoffee.my.id/api/'
     const [loadPost, setLoadPost] = useState([]);
     const getPost = () => {
         axios.get(`${BASE_URL}education`, {
@@ -15,10 +14,7 @@ function Edukasi() {
                 'Content-Type': 'application/json'
             }
         })
-
-            //4-1
             .then(function (response) {
-                console.log(response);
                 setLoadPost(response.data.data.data)
             })
             .catch(function (error) {
@@ -29,7 +25,6 @@ function Edukasi() {
     //5
     useEffect(() => {
         getPost();
-        // console.log(loadPost)
     }, [])
     return (
         <>
@@ -41,10 +36,10 @@ function Edukasi() {
                             loadPost.map((isipost, index) => {
                                 return (
                                     <>
-                                        <div className="card mb-3" style={{ maxWidth: "70rem",backgroundColor: "#FBFBFB",boxShadow:"0 4px 8px 0 rgba(0,0,0,0.2)" }}>
+                                        <div className="card mb-3" style={{ maxWidth: "70rem", backgroundColor: "#FBFBFB", boxShadow: "0 4px 8px 0 rgba(0,0,0,0.2)" }}>
                                             <div className="row g-0">
                                                 <div className="col-md-4" key={index}>
-                                                    <img src={`https://scoffe.masuk.web.id/images/education/${isipost.image}`} className="img-fluid rounded-start" alt="..." />
+                                                    <img src={`https://be.scoffee.my.id/images/education/${isipost.image}`} className="img-fluid rounded-start" alt="..." />
                                                 </div>
                                                 <div className="col-md-8">
                                                     <div className="card-body">
@@ -67,7 +62,7 @@ function Edukasi() {
 
                 </div>
             </div>
-        
+
         </>
 
     );

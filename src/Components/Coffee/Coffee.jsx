@@ -4,9 +4,8 @@ import Navbar from "../Navbar/Navbar";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import Footer from "../Navbar/Footer";
 function Coffee() {
-    const BASE_URL = 'https://scoffe.masuk.web.id/api/'
+    const BASE_URL = 'https://be.scoffee.my.id/api/'
     const [loadPost, setLoadPost] = useState([]);
     const getPost = () => {
         axios.get(`${BASE_URL}coffee`, {
@@ -17,9 +16,7 @@ function Coffee() {
             }
         })
 
-            //4-1
             .then(function (response) {
-                console.log(response);
                 setLoadPost(response.data.data.data)
             })
             .catch(function (error) {
@@ -27,10 +24,8 @@ function Coffee() {
             })
     }
 
-    //5
     useEffect(() => {
         getPost();
-        // console.log(loadPost)
     }, [])
     return (
         <div id="bg1">
@@ -44,7 +39,7 @@ function Coffee() {
                                     return (
 
                                         <div className="card col-6" key={index}style={{ width: "18rem", margin: "10px",backgroundColor: "#FBFBFB" }}>
-                                            <img src={`https://scoffe.masuk.web.id/images/coffee/${isipost.image}`} className="card-img-top" alt="..." width="auto" height="200px" style={{marginTop:"10px"}}/>
+                                            <img src={`https://be.scoffee.my.id/images/coffee/${isipost.image}`} className="card-img-top" alt="..." width="auto" height="200px" style={{marginTop:"10px"}}/>
                                             <div className="card-body">
                                                 <h4>{isipost.name}</h4>
                                                 <p className="card-text"><small className="text-muted">{isipost.type}</small></p>
