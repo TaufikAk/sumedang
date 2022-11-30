@@ -19,7 +19,7 @@ function Coffee() {
             .then(function (response) {
                 setLoadPost(response.data.data.data)
             })
-            .catch(function (error) {
+             .catch(function (error) {
                 console.log(error);
             })
     }
