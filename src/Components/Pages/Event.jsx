@@ -120,6 +120,7 @@ const Event = () => {
 
                                 })
                             }
+                            
                             <Pagination.Next onClick={() => getPoste(page.next_page_url)} />
                             <Pagination.Last onClick={() => getPoste(page.last_page_url)} />
                         </Pagination>
