@@ -1,17 +1,19 @@
 import "./Coffee.css";
 import about from "../../images/about.png";
-import Navbar from "../Navbar/Navbar";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Pagination } from "react-bootstrap";
 import moment from "moment/moment";
+import Cardcoffee from "./Cardcoffee";
 
 function Coffee() {
   const BASE_URL = "https://be.scoffee.my.id/api/";
   const [loadPost, setLoadPost] = useState([]);
   const [page, setPage] = useState([]);
   const [pages, setPages] = useState([]);
+  const [temp, setTemp] = useState({});
+  const [show, setShow] = useState(false);
 
   const getPost = () => {
     axios
@@ -23,6 +25,7 @@ function Coffee() {
         },
       })
       .then(function (response) {
+        console.log(response)
         setLoadPost(response.data.data.data);
         setPage(response.data.data);
         setPages(response.data.data.links);
@@ -56,13 +59,13 @@ function Coffee() {
 
   return (
     <div id="bg1">
-      <Navbar />
       <div className="container">
         <div className="row" id="p1">
           <div className="col-8">
             <div className="row">
               {loadPost.map((isipost, index) => {
                 return (
+                  <>
                   <div
                     className="card col-6"
                     key={index}
@@ -71,6 +74,7 @@ function Coffee() {
                       margin: "10px",
                       backgroundColor: "#FBFBFB",
                     }}
+                    onClick={() => setShow(true) & setTemp(isipost)}
                   >
                     <img
                       src={`https://be.scoffee.my.id/images/coffee/${isipost.image}`}
@@ -92,14 +96,18 @@ function Coffee() {
                           {moment(isipost.created_at).fromNow()}
                         </small>
                       </p>
-                      <Link
+                      {/* <Link
                         to={`/detailcoffee/${isipost.slug}`}
                         className=" stretched-link"
-                      ></Link>
+                      ></Link> */}
                     </div>
                   </div>
+                </>
                 );
+                
               })}
+              <Cardcoffee map={temp.id} show={show} close={()=> setShow(false)} name={temp.name} type={temp.type}
+              origin={temp.origin} image={temp.image} description={temp.description} />
             </div>
           </div>
           <div className="col-3">
