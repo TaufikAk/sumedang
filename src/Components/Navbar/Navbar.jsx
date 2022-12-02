@@ -28,11 +28,11 @@ function Navbar() {
             <Link to={'/'} className='logo'>
                 <img src={logo} />
             </Link>
-            <input type="checkbox" className='menu-btn' id='menu-btn' />
+            {/* <input type="checkbox" className='menu-btn' id='menu-btn' /> */}
             <label className='menu-icon' htmlFor='menu-btn'>
                 <span className='nav-icon'></span>
             </label>
-            <ul className='menu'>
+            <ul className='menu my-auto'>
                 <li><NavLink style={NavStyles} to={'/'} >Home</NavLink></li>
                 <li><NavLink style={NavStyles} to={'/coffee'}>Coffee</NavLink></li>
                 <li><NavLink style={NavStyles} to={'/edukasi'}>Edukasi</NavLink></li>

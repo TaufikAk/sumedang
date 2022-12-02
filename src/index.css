@@ -47,7 +47,7 @@ footer .d-flex img{
 #main{
 
   width:auto;
-  height:100vh;
+  height:110vh;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
@@ -278,6 +278,7 @@ width: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(images/presentation.webp);
+  background-position-y: 35px;
   text-align: center;
 }
 #presentation h1{

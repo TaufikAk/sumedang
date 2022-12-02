@@ -64,6 +64,13 @@ function Coffee() {
           <div className="col-8">
             <div className="row">
               {loadPost.map((isipost, index) => {
+                    const sliceName = () => {
+                      if(isipost.name.length <= 17){
+                          return isipost.name
+                      } else{
+                          return `${isipost.name.slice(0,16)}...`
+                      }
+                  }
                 return (
                   <>
                   <div
@@ -79,13 +86,13 @@ function Coffee() {
                     <img
                       src={`https://be.scoffee.my.id/images/coffee/${isipost.image}`}
                       className="card-img-top"
-                      alt="..."
+                      alt={isipost.name}
                       width="auto"
                       height="200px"
                       style={{ marginTop: "10px" }}
                     />
                     <div className="card-body">
-                      <h4>{isipost.name}</h4>
+                      <h4>{sliceName()}</h4>
                       <p className="card-text">
                         <small className="text-muted">{isipost.type}</small>
                       </p>
