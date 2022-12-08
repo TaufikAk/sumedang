@@ -34,7 +34,7 @@ const CardEvent = (props) => {
                     <p className="card-text"><img src={Calendar} alt="" /> {moment(props.date).format('DD-MM-YYYY')}</p>
                 </div>
             </div>
-            <DetailEvent show={show} onHide={() => addShow(false)} key={props.id} title={props.title} date={props.date} author={props.author}
+            <DetailEvent key={props.id} show={show} onHide={() => addShow(false)} title={props.title} date={props.date} author={props.author}
                 body={props.body} image={props.image} />
         </>
     )

@@ -9,6 +9,7 @@ import Artikel_petani from "./Components/Edukasi/Artikel_petani";
 import Download from "./Components/Pages/Download";
 import Detailcoffee from "./Components/Coffee/Detailcoffee";
 import Footer from "./Components/Navbar/Footer";
+import Pagenotfound from "./Components/Pages/Pagenotfound";
 
 function App() {
 
@@ -20,7 +21,6 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            {/* <Route path="/" element={<Header/>}/> */}
             <Route path="/" element={<Header />} />
             <Route path="/event" element={<Event />} />
             <Route path="/coffee" element={<Coffee />} />
@@ -28,6 +28,7 @@ function App() {
             <Route path="/edukasi" element={<Edukasi />} />
             <Route path="/petani/:slug" element={<Artikel_petani />} />
             <Route path="/download" element={<Download />} />
+            <Route path="*" element={<Pagenotfound />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -10,7 +10,7 @@ const Download = () => {
                 <p>Informasi lengkap mengenai kopi, edukasi dari para ekspertise di bidang kopi, dan informasi kegiatan bertemakan kopi.
                     Temukan teman baru dan berbagai diskusi menarik dalam forum. Semuanya dapat Anda dapatkan dan akses secara mudah melalui
                     Scoffee. Aplikasi edukasi karya anak negeri! "GRATISSS!"</p>
-                <Link to={'/download'} className='cv-btn'>Download</Link>
+                <a href="https://reactjs.org/" target="_blank" className='cv-btn'>Download</a>
             </div>
             <div className="col-lg-6 col-md-3 col-sm-1 my-auto" >
                 <img src={Downloadi} alt=""></img>

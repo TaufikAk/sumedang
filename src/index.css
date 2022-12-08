@@ -41,8 +41,8 @@ footer .d-flex img{
 
 .logo img{
   height: 50px;
-  width: 50px;
-  margin-left: 150%;
+  width: auto;
+  margin-left: 10vw;
 }
 #main{
 
@@ -247,7 +247,7 @@ width: 600px;
 .a-box{
   background-color: #ffffff;
   width:320px;
-  height: 470px;
+  height: 480px;
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
@@ -351,18 +351,13 @@ font-size: 2rem;
   flex-direction: column;
 }
 .s-b-text p{
-  margin: 0px;
+  margin: auto;
   color:#000266a6;
   font-size: 1.1rem;
   font-family: calibri;
   display: block;
   display: -webkit-box;
   max-width: 80%;
-  margin-top: 25px;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 .s-b-text p:hover{
   color:#000266;
